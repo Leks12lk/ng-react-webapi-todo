@@ -3,9 +3,9 @@
 <p>Using AngularJS directives as React components.</p>
 <h4>Using technologies:</h4>
 <ul>
-<li>AngularJS<li>
-<li>React<li>
-<li>ASP.NET Web API 2<li>
-<li>Entity Framework<li>
-<li>Ninject<li>
+<li>AngularJS</li>
+<li>React</li>
+<li>ASP.NET Web API 2</li>
+<li>Entity Framework</li>
+<li>Ninject</li>
 </ul>
