@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "ToDO Application";
+}
+
+<div class="mini-nav">
+    <a href="#/tasks" class="btn btn-raised btn-info pills-btn">
+        Angular
+        <img src="~/Content/Images/angular-logo.png" alt="Alternate Text" />
+    </a>
+    <a href="#/tasksreact" class="btn btn-raised btn-info pills-btn">
+        Angular with React
+        <img src="~/Content/Images/angular-logo.png" alt="Alternate Text" />+
+        <img src="~/Content/Images/react-logo.png" alt="Alternate Text" />
+    </a>
+</div>
+
+<div ng-view class="row"></div>
+
+@section scripts {
+    <script>
+        // difene constant with baseUrl value
+        ToDoApp.constant('baseUrl', '@ViewBag.BaseUrl');
+    </script>    
+}
+
+

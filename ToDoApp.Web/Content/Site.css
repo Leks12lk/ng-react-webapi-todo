@@ -1,0 +1,59 @@
+﻿h3 {
+    margin-left: 20px;
+}
+.pills-btn {
+    padding: 5px;
+    width: 250px; 
+}
+.delete-btn {
+    width: 170px;
+    margin-right: 10px;
+}
+input[type="checkbox"]{
+    margin: 0 10px;
+}
+.navbar-nav,
+.navbar-nav>li {
+    float: none;
+}
+.mini-nav {
+    margin-bottom: 50px;
+}
+.navbar-nav a {
+    color: #fff;
+}
+.navbar-nav a:hover {
+    text-decoration: none;
+}
+
+.body-content {
+    margin-top: 100px;
+}
+
+.enterInput {
+    padding: 5px;
+    border: 1px solid gray;
+}
+
+.enterInput:hover,
+.enterInput:focus {
+    border: 1px solid #009688;
+}
+
+.closed {
+    text-decoration: line-through;
+}
+
+.tasks-wrapper li {
+    max-width: 400px;
+    width: 100%;
+    height: 40px;
+    background: #d9edf7;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.tasks-wrapper li.closed {
+    background: #ddd;
+    color: #fff;
+    text-decoration: line-through;
+}

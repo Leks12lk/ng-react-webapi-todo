@@ -1,0 +1,24 @@
+﻿
+<h3>With Angular + React</h3>
+<div class="col-md-12">
+    <!-- form to add a new task -->
+    <form ng-submit="addTask(inputTitle)">
+        <input type="text" ng-model="inputTitle" size="50" placeholder="Add New Task" class="enterInput" required>
+        <input type="submit" value="Add" class="btn btn-raised btn-primary">
+    </form>
+
+    <h4>You have to do {{getNotCompletedTasksCount()}}</h4>
+
+    <!-- list of tasks (main part) to build with directive including react component -->
+    <ul class="list-unstyled tasks-wrapper">
+        <li ng-repeat="task in tasks" ng-class="{closed: task.IsDone}" id="task-item">
+            <task-row task="task" update-task="updateTask(task)"></task-row>
+        </li>
+    </ul>
+
+    <!-- buttons for tasks removing -->
+    <div ng-if="tasks.length > 0">
+        <button ng-click="deleteMarked()" class="btn btn-raised btn-warning delete-btn">Remove marked</button>
+        <button ng-click="deleteAll()" class="btn btn-raised btn-warning delete-btn">Remove all</button>
+    </div>
+</div>
